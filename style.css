@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'Lowbatt';
+  src: url('./assets/LowBatt.otf') format('opentype');
+}
+
+html,
+body {
+  font-family: Lowbatt, sans-serif;
+  height: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+
+  background-color: lavenderblush;
+}
+
+.modal {
+  display: flex;
+  z-index: 2;
+
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+
+  backdrop-filter: blur(3px);
+  background-color: transparent;
+  /* opacity: 0.4; */
+}
+
+.modal-title-text {
+  font-size: 7rem;
+  margin: 1rem 0;
+}
+
+.button {
+  font-family: Lowbatt, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  font-size: 2.5rem;
+  padding: 1rem 1.6rem;
+  background-color: lightseagreen;
+  color: whitesmoke;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+.button:hover {
+  box-shadow: 9px 10px 27px 0px rgba(33, 33, 33, 0.48);
+  transform: scale(1.02);
+  /* transform: rotate(-5deg); */
+}
+
+.modal-button:active {
+  transform: scale(0.97);
+}
+
+.modal-subtitle-text {
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+.keys-image {
+  padding: 1rem;
+  margin-left: 0.4rem;
+}
+
+.modal-container {
+  color: rgb(80, 80, 80);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.game-container {
+  display: grid;
+  /* grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 1fr); */
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  box-shadow: -1px 10px 61px -3px rgba(33, 33, 33, 0.48);
+}
+
+.cell {
+  width: 1.4rem;
+  height: 1.4rem;
+  border: solid 1px rgb(239, 217, 174);
+  background-color: rgb(255, 255, 255);
+}
+
+.snake {
+  background-color: rgb(36, 41, 46);
+}
+
+div.food {
+  background-color: rgb(196, 96, 96);
+}
+
+.score-container {
+  /* justify-content: center; */
+  align-items: center;
+
+  padding: 0.8rem 1.5rem;
+  background-color: lightcoral;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  box-shadow: -1px 10px 61px -3px rgba(33, 33, 33, 0.48);
+  display: flex;
+}
+
+.score {
+  font-family: Lowbatt, sans-serif;
+  margin-left: 0.5rem;
+  font-size: 2.9rem;
+}
+
+.toggle-button {
+  display: flex;
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  background-color: lightcoral;
+  width: 100%;
+  border: none;
+  outline: none;
+}
